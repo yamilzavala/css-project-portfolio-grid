@@ -218,9 +218,19 @@ Navbar
   color: var(--clr-primary-5);
 }
 
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+}
+
 @media screen and (min-width: 768px) {
   .nav {
-    background: var(--clr-primary-10);
+    background: var(--clr-primary-10);    
   }
   .nav-center {
     display: grid;
@@ -320,6 +330,9 @@ Sidebar
   color: var(--clr-primary-5);
 }
 
+.show-sidebar {
+  transform: translateX(0%);
+}
 
 /*
 =============== 
@@ -327,6 +340,11 @@ Hero
 ===============
 */
 /* underline added to globals */
+.hero {
+  min-height: 1300vh;
+  background-color: rgb(248, 248, 248);
+}
+
 
 /*
 =============== 
