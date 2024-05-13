@@ -4,6 +4,8 @@ Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=bespoke-slab@400&f[]=poppins@400,500,700&display=swap");
+
 
 /*
 =============== 
@@ -171,6 +173,83 @@ p {
 Navbar
 ===============
 */
+.logo {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: var(--spacing);
+  font-family: 'Bevellier', sans-serif;
+  color: var(--clr-dark-grey);
+}
+.logo-last-name {
+  color: var(--clr-primary-4);
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav {
+  display: grid;
+  height: 5rem;
+  padding: 1rem;
+  transition: var(--transition);
+  align-items: center;
+}
+
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nav-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  justify-self: end;
+  color: var(--clr-primary-5);
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    background: var(--clr-primary-10);
+  }
+  .nav-center {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    justify-items: center;
+    column-gap: 2rem;
+    justify-self: end;
+  }
+  .nav-links a {
+    text-transform: capitalize;
+    color: var(--clr-grey-1);
+    font-weight: bold;
+    letter-spacing: var(--spacing);
+    transition: var(--transition);
+  }
+  .nav-links a:hover {    
+    color: var(--clr-primary-5);
+  }
+
+}
 
 /*
 =============== 
