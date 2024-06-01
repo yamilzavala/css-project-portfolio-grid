@@ -776,6 +776,60 @@ Skills without progress bars
 Timeline
 ===============
 */
+.timeline-center {
+  width: 80vw;
+  max-width: 40rem;;
+}
+.timeline-item {
+  border-top: dashed 2px var(--clr-primary-5);
+  margin: 0;
+  padding: 4rem 2rem;
+  position: relative;
+}
+.timeline p {
+  margin-bottom: 0;
+}
+.timeline-item:nth-child(even) {
+  border-left: dashed 2px var(--clr-primary-5);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  margin-right: 1rem;
+  padding-right: 0;
+}
+.timeline-item:nth-child(odd) {
+  border-right: dashed 2px var(--clr-primary-5);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-left: 1rem;
+  padding-left: 0;
+}
+.timeline-item:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+}
+.timeline-item:last-child {
+  border-bottom-left-radius: 0;
+}
+.number {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  color: var(--clr-primary-1);
+  font-weight: bold;
+  background: var(--clr-primary-5);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+}
+.timeline-item:nth-child(even) .number { 
+  left: 0;
+}
+.timeline-item:nth-child(odd) .number { 
+  right: 0;
+  transform: translate(50%, -50%);
+}
 
 /*
 =============== 
