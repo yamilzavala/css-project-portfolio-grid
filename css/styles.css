@@ -865,7 +865,7 @@ Blog
   position: relative;
   height: 27rem;
   perspective: 1500px;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 .card-side {
   backface-visibility: hidden;
@@ -901,6 +901,8 @@ Blog
 }
 .card-info {
   padding: 1rem 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr 100px auto;
 }
 .card-footer {
   display: grid;
@@ -925,18 +927,50 @@ Blog
   grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
   gap: 3rem 1rem;
 }
-
-
 /*
 =============== 
 Footer
 ===============
 */
+.footer {
+  display: grid;
+  place-items: center;
+  padding-bottom: 2rem;
+  background-color: black;  
+}
+.footer p{
+  color: var(--clr-grey-5);
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+.footer .social-links{
+  margin-bottom: 1rem;
+}
+.footer .social-icon {
+  color: var(--clr-primary-5)
+}
+.footer .social-icon:hover {
+  color: var(--clr-primary-10)
+}
 /*
-=============== 
-Single Page
+Contact
 ===============
 */
+.contact {
+  background: var(--clr-primary-10);
+}
+.contact-center {
+  max-width: 30rem;
+}
+.contact-center a{
+  text-transform: lowercase;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+.contact-center a:hover{ 
+  color: var(--clr-primary-1);
+}
+
 
 /*
 =============== 
