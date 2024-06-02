@@ -852,7 +852,14 @@ Timeline
   right: 0;
   transform: translate(50%, -50%);
 }
-
+.timelime-role {
+  font-weight: bold;
+  color: black
+}
+.timelime-responsabilities {
+  font-weight: bold;
+  color: black
+}
 /*
 =============== 
 Blog
