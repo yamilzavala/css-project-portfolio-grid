@@ -411,8 +411,6 @@ Hero
   position: relative;
 }
 
-
-
 /*
 =============== 
 About
@@ -420,11 +418,11 @@ About
 */
 /* section title added to globals */
 .about-title {
-  text-align: left;
+  text-align: center;
   margin-bottom: 2em;
 }
 .about-title .underline{
-  margin-left:0;
+  margin: 0 auto;
 }
 .about-center {
   display: grid;
@@ -432,6 +430,13 @@ About
 }
 .about-img {
   justify-self: center;
+}
+.about-info {
+  margin: 0 auto;
+  text-align: center;
+}
+.about-info p {
+  max-width: 30rem;
 }
 @media screen and (min-width: 992px){
   .about-center {
@@ -446,6 +451,23 @@ About
   .about-info {
     align-self: center;
   }
+  .about-info .btn{
+    margin: 0 auto;
+  }
+  .about-title {
+    text-align: left;
+    margin-bottom: 2em;
+  }
+  .about-title .underline{
+    margin-left: 0;
+  }
+  .about-info {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:768px) {
+
 }
 /*
 =============== 
