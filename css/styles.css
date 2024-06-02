@@ -957,7 +957,7 @@ Contact
 ===============
 */
 .contact {
-  background: var(--clr-primary-10);
+  background: var(--clr-white);
 }
 .contact-center {
   max-width: 30rem;
@@ -969,6 +969,9 @@ Contact
 }
 .contact-center a:hover{ 
   color: var(--clr-primary-1);
+}
+.contact-center p{ 
+  padding: 0 1rem;
 }
 
 
