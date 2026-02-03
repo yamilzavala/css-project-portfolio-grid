@@ -584,7 +584,7 @@ Projects
 @media screen and (min-width: 676px) {
   .projects-center {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
     column-gap: 2rem;
   }
 }
@@ -598,8 +598,8 @@ Projects
     gap: 1rem;
     grid-template-rows: repeat(2, 200px);
     grid-template-areas: 
-      'a b b'
-      'a c d'
+      'a e e b'
+      'a c d b'
     ;
   }
   .project-1 {
@@ -613,6 +613,9 @@ Projects
   }
   .project-4 {
     grid-area: d;
+  }
+  .project-5 {
+    grid-area: e;
   }
   .project-img {   
     height: 100%;
