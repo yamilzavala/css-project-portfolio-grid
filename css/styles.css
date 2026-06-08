@@ -598,8 +598,8 @@ Projects
     gap: 1rem;
     grid-template-rows: repeat(2, 200px);
     grid-template-areas: 
-      'a e e b'
-      'a c d b'
+      'c e e b'
+      'c d d b'
     ;
   }
   .project-1 {
